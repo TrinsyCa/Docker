@@ -7,7 +7,7 @@
     "require": {
         "php": ">=7.0"
     },
-    "version": "1.0.5",
+    "version": "v1.0.6",
     "authors": [
         {
             "name": "Ömer İslamoğlu",
