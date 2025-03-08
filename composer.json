@@ -1,0 +1,31 @@
+{
+    "name": "trinsyca/docker",
+    "description": "Docker Setup [frontend, backend, fullstack] for Laravel",
+    "type": "library",
+    "keywords": ["docker", "laravel", "laravel docker setup", "docker setup", "docker frontend", "docker backend", "docker fullstack", "docker laravel"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0"
+    },
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Ömer İslamoğlu",
+            "email": "omer@trinsyca.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Trinsyca\\Docker\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php vendor/trinsyca/docker/setup-guide.php \n"
+        ],
+        "trinsy:docker-frontend": "php vendor/trinsyca/docker/docker-frontend/setup-docker.php \n",
+        "trinsy:docker-backend": "php vendor/trinsyca/docker/docker-backend/setup-docker.php \n",
+        "trinsy:docker-fullstack": "php vendor/trinsyca/docker/docker-fullstack/setup-docker.php \n",
+        "trinsy:docker-remove": "php vendor/trinsyca/docker/remove-docker.php \n"
+    }
+}
