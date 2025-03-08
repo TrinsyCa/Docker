@@ -1,0 +1,1 @@
+<?php define('BASE_VENDOR', '/vendor/trinsyca/docker/'); ?>

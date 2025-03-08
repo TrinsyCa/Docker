@@ -1,12 +1,14 @@
 <?php
 
+require_once "../base_path.php";
+
 $projectRoot = getcwd();
 $projectName = basename($projectRoot);
 
 echo "📂 Project Directory: $projectName\n\n";
 
 // Dizinin doğru tanımlanması
-$dockerComposeDir = 'vendor/trinsyca/docker/docker-fullstack/';
+$dockerComposeDir = __DIR__ . BASE_VENDOR . 'cmd/docker-backend/';
 
 // Dosya listesini tanımla
 $files = [

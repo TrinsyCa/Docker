@@ -21,11 +21,11 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php vendor/trinsyca/docker/setup-guide.php \n"
+            "php cmd/setup-guide.php \n"
         ],
-        "trinsy:docker-frontend": "php vendor/trinsyca/docker/docker-frontend/setup-docker.php \n",
-        "trinsy:docker-backend": "php vendor/trinsyca/docker/docker-backend/setup-docker.php \n",
-        "trinsy:docker-fullstack": "php vendor/trinsyca/docker/docker-fullstack/setup-docker.php \n",
-        "trinsy:docker-remove": "php vendor/trinsyca/docker/remove-docker.php \n"
+        "trinsy:docker-frontend": "php cmd/docker-frontend/setup-docker.php \n",
+        "trinsy:docker-backend": "php cmd/docker-backend/setup-docker.php \n",
+        "trinsy:docker-fullstack": "php cmd/docker-fullstack/setup-docker.php \n",
+        "trinsy:docker-remove": "php cmd/remove-docker.php \n"
     }
 }
