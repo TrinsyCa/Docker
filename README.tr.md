@@ -8,7 +8,7 @@ Lütfen tercih ettiğiniz dili seçiniz
 [<kbd> <br> Türkçe <br> </kbd>][TR]
 
 [TR]: README.tr.md
-[EN]: README.md
+[EN]: https://github.com/TrinsyCa/Docker/tree/main?tab=readme-ov-file#-trinsyca-docker-setup-
 </div>
 
 ## Bu proje ne için?
