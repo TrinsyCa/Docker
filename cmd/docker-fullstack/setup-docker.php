@@ -8,7 +8,7 @@ $projectName = basename($projectRoot);
 echo "📂 Project Directory: $projectName\n\n";
 
 // Dizinin doğru tanımlanması
-$dockerComposeDir = __DIR__ . BASE_VENDOR . 'cmd/docker-fullstack/';
+$dockerComposeDir = __DIR__ . '/';
 
 // Dosya listesini tanımla
 $files = [

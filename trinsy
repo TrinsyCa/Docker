@@ -1,0 +1,29 @@
+#!/usr/bin/env php
+<?php
+
+// Kullanıcının vendor dizinini otomatik bul
+$vendorPath = __DIR__ . '/../..';
+
+// Komut eşleşmelerini tanımla
+$commands = [
+    'docker-frontend' => "$vendorPath/vendor/trinsyca/docker/cmd/docker-frontend/setup-docker.php",
+    'docker-backend' => "$vendorPath/vendor/trinsyca/docker/cmd/docker-backend/setup-docker.php",
+    'docker-fullstack' => "$vendorPath/vendor/trinsyca/docker/cmd/docker-fullstack/setup-docker.php",
+    'docker-remove' => "$vendorPath/vendor/trinsyca/docker/cmd/remove-docker.php"
+];
+
+// Kullanıcının girdiği komutu al
+$command = $argv[1] ?? null;
+
+// Komut var mı kontrol et
+if (!$command || !isset($commands[$command])) {
+    echo "Usage: trinsy <command>\n";
+    echo "Available commands:\n";
+    foreach (array_keys($commands) as $cmd) {
+        echo "  - $cmd\n";
+    }
+    exit(1);
+}
+
+// Komutu çalıştır
+passthru("php " . escapeshellarg($commands[$command]));

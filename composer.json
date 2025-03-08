@@ -19,13 +19,21 @@
             "Trinsyca\\Docker\\": "src/"
         }
     },
+    "extra": {
+        "installer-paths": {
+            "vendor/trinsyca/docker/": ["trinsyca/docker"]
+        }
+    },
+    "bin": [
+        "trinsy"
+    ],
     "scripts": {
         "post-install-cmd": [
-            "php cmd/setup-guide.php \n"
+            "php vendor/trinsyca/docker/cmd/setup-guide.php \n"
         ],
-        "trinsy:docker-frontend": "php cmd/docker-frontend/setup-docker.php \n",
-        "trinsy:docker-backend": "php cmd/docker-backend/setup-docker.php \n",
-        "trinsy:docker-fullstack": "php cmd/docker-fullstack/setup-docker.php \n",
-        "trinsy:docker-remove": "php cmd/remove-docker.php \n"
+        "trinsy:docker-frontend": "vendor/bin/trinsy docker-frontend",
+        "trinsy:docker-backend": "vendor/bin/trinsy docker-backend",
+        "trinsy:docker-fullstack": "vendor/bin/trinsy docker-fullstack",
+        "trinsy:docker-remove": "vendor/bin/trinsy docker-remove"
     }
 }
