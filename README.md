@@ -24,6 +24,17 @@ composer require trinsyca/docker
 ```
 **This will add the necessary Docker files and configurations to your project.**
 
+**After running the installation commands, the project will automatically execute the command ``composer require trinsyca/trinsy``.**<br>
+**During this process, you will be prompted with the following question in the terminal:**
+
+```bash
+Do you trust "trinsyca/trinsy" to execute code and wish to enable it now? (writes "allow-plugins" to composer.json) [y,n,d,?]
+```
+
+- **Please type ``y`` to allow and proceed.**<br>
+
+**This will install the ``trinsyca/trinsy`` plugin, enabling you to use the Docker setup commands**
+
 ## Available Commands ⚙️
 
 **Once installed, use the following Composer commands to set up the Docker configurations for your project:**
