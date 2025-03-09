@@ -1,7 +1,5 @@
 <?php
 
-require_once "../base_path.php";
-
 $projectRoot = getcwd();
 $projectName = basename($projectRoot);
 
