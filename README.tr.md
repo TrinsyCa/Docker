@@ -24,6 +24,17 @@ composer require trinsyca/docker
 ```
 **Bu, projenize gerekli Docker dosyalarını ve yapılandırmalarını ekleyecektir.**
 
+**İlk kurulum komutlarını çalıştırdıktan sonra, proje otomatik olarak ``composer require trinsyca/trinsy`` komutunu çalıştıracaktır.**<br>
+**Şu soruyla karşılaştığınızda:**
+
+```bash
+Do you trust "trinsyca/trinsy" to execute code and wish to enable it now? (writes "allow-plugins" to composer.json) [y,n,d,?]
+```
+
+- **Devam etmek için ``y`` yazın.**<br>
+
+**Bu, ``trinsyca/trinsy`` kütüphanesini yükleyecek ve Docker kurulumu komutlarını kullanmanızı sağlayacaktır.**
+
 ## Mevcut Komutlar ⚙️
 
 **Kurulum tamamlandıktan sonra, projeniz için Docker yapılandırmalarını kurmak için aşağıdaki Composer komutlarını kullanın:**
