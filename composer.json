@@ -6,9 +6,9 @@
     "license": "MIT",
     "require": {
         "php": ">=7.0",
-        "trinsyca/trinsy": "dev-main"
+        "trinsyca/trinsy": "v1.1.0"
     },
-    "version": "v1.0.9",
+    "version": "v1.1.0",
     "authors": [
         {
             "name": "Ömer İslamoğlu",
