@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.0",
-        "trinsyca/trinsy": "dev-master"
+        "trinsyca/trinsy": "dev-main"
     },
     "version": "v1.0.8",
     "authors": [
