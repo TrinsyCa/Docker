@@ -14,13 +14,13 @@ echo "📂 Project Directory: $projectName\n\n";
 // Kullanım talimatlarını göster
 echo "🔹 How to generate Docker files for your project:\n\n";
 
-echo "👉 For Backend Only:\n";
-echo "   $ composer trinsy:docker-backend\n";
-echo "   → This command will generate backend Docker files and setup Docker environment.\n\n";
-
 echo "👉 For Frontend Only:\n";
 echo "   $ composer trinsy:docker-frontend\n";
 echo "   → This command will generate frontend Docker files and setup Docker environment.\n\n";
+
+echo "👉 For Backend Only:\n";
+echo "   $ composer trinsy:docker-backend\n";
+echo "   → This command will generate backend Docker files and setup Docker environment.\n\n";
 
 echo "👉 For Fullstack (Frontend + Backend):\n";
 echo "   $ composer trinsy:docker-fullstack\n";

@@ -5,9 +5,10 @@
     "keywords": ["docker", "laravel", "laravel docker setup", "docker setup", "docker frontend", "docker backend", "docker fullstack", "docker laravel"],
     "license": "MIT",
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "trinsyca/trinsy": "dev-master"
     },
-    "version": "v1.0.7",
+    "version": "v1.0.8",
     "authors": [
         {
             "name": "Ömer İslamoğlu",
@@ -29,6 +30,7 @@
     ],
     "scripts": {
         "post-install-cmd": [
+            "composer require trinsyca/trinsy",
             "php vendor/trinsyca/docker/cmd/setup-guide.php \n"
         ],
         "trinsy:docker-frontend": "vendor/bin/trinsy docker-frontend",
