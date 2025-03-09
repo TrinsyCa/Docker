@@ -33,7 +33,7 @@ Do you trust "trinsyca/trinsy" to execute code and wish to enable it now? (write
 
 - **Please type ``y`` to allow and proceed.**<br>
 
-**This will install the ``trinsyca/trinsy`` plugin, enabling you to use the Docker setup commands**
+**This will install the [``trinsyca/trinsy``](https://github.com/TrinsyCa/Trinsy) plugin, enabling you to use the Docker setup commands**
 
 ## Available Commands ⚙️
 
